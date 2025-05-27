@@ -1,119 +1,66 @@
+# EXP 5: Comparative Analysis of Naïve Prompting versus Basic Prompting Using ChatGPT Across Various Test Scenarios
+# Aim:
+To test how ChatGPT responds to naïve prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios, analyzing the quality, accuracy, and depth of the generated responses.
 
+# Algorithm: 
+## 1. Define Prompt Types:
 
-# EX-2 Comparative Analysis of different types of Prompting patterns and explain with Various Test scenerios
-# AIM: 
+* Naïve Prompts are vague and lack direction, e.g., “Tell me something.”
 
-Test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios. Analyze the quality, accuracy, and depth of the generated responses.
+* Basic Prompts are specific, structured, and instructive, e.g., “Write a three-sentence summary of Newton’s laws for high school students.”
 
-# Aim of the Study:
+## 2. Select Test Scenarios:
 
-To test and compare how different models respond to various prompts — from open-ended or vague queries to well-structured and specific instructions — and to analyze how these variations impact: 
-- Response quality
-- Depth of understanding
-- Accuracy and relevance
-# Methodology:
+* Creative storytelling
 
-1. Select three categories of prompts:
-   - Broad/unstructured
-   - Basic/clear
-   - Creative/advanced
+* Factual question answering
 
-2. Use three major AI tools for response generation:
-   - ChatGPT (OpenAI)
-   - Claude (Anthropic)
-   - DeepSeek (DeepSeekAI)
+* Concept summarization
 
-3. For each prompt type, responses will be:
-   - Evaluated qualitatively (coherence, depth, relevance)
-   - Rated quantitatively (scale of 1–5)
+* Giving practical advice
 
-4. Additionally, prompt inputs are given to:
-   - Runway: to evaluate prompt interpretation for video generation
-   - Midjourney: to visualize response accuracy in image generation
-# Prompt Types Explained:
-1.Broad/Unstructured Prompt:
-A Broad/Unstructured Prompt is a general or vague instruction given to an AI model, such as “Tell me about AI.” It lacks specific details or direction, leading to wide-ranging, often superficial responses. These prompts offer creative freedom but may result in less focused or less relevant outputs.
- e.g., "Tell me about AI."
+* Technical explanation
 
-2. Basic/Refined Prompt: 
-A Basic/Refined Prompt is a clearly structured and specific instruction given to an AI model. It includes details like context, desired output, and format, guiding the model toward accurate, relevant, and high-quality responses. These prompts reduce ambiguity and enhance the depth and usefulness of the generated content.
-e.g., "Explain how AI is used in the healthcare sector with examples."
+## 3. Create Prompt Pairs:
 
-3. Creative/Advanced Prompt: 
-A creative/advanced prompt is a highly specific and imaginative instruction designed to unlock an AI's full potential. It encourages originality, emotional depth, and contextual richness. These prompts often involve storytelling, hypothetical scenarios, or complex tasks, resulting in more nuanced, engaging, and insightful responses compared to basic or broad prompts.
-e.g., "Generate a short sci-fi story where AI is used to terraform Mars, with emotional conflict."
-Scenario 1 – General Information Retrieval
-Prompt Type 1: "Talk about space"
-- ChatGPT: Gives a broad overview
-- Claude: Focuses on key areas
-- DeepSeek: Detailed facts and organized output
+* For each scenario, formulate both a naïve and a basic version targeting the same goal.
 
-Prompt Type 2: "List five recent space missions by NASA and their purpose"
-- ChatGPT: Highly accurate
-- Claude: Deeper technical insight
-- DeepSeek: Systematic list
+## 4. Run and Record Outputs:
 
-Observation: Refined prompts yield more relevant and focused responses.
-Scenario 2 – Creative Content Generation
-Prompt Type 1: "Write a story about robots"
-- ChatGPT: Engaging, generic plot
-- Claude: Philosophical themes
-- DeepSeek: Balanced creativity and logic
+* Input both prompts into ChatGPT and record the respective responses.
 
-Prompt Type 2: "Write a short story where a robot discovers human art in a post-apocalyptic world"
-- All models delivered richer, more compelling narratives with strong emotional arcs
+## 5. Analyze and Compare:
 
-Observation: Advanced prompts unleash more creativity and coherence.
-Scenario 3 – Instructional/Procedural Response
-Prompt Type 1: "How to bake a cake?"
-- All models: Provided basic steps
+* Evaluate each pair based on:
 
-Prompt Type 2: "Provide a step-by-step chocolate cake recipe with measurements and baking time"
-- Responses: Detailed, instructional, and more actionable
+* Quality (fluency, engagement)
 
-Observation: Clarity in prompt enhances instructional usefulness.
-Scenario 4 – Visual Media Creation
-Tool Used: Midjourney (Image) and Runway (Video)
+* Accuracy (factual correctness)
 
-Prompt Type 1: "Create an image of a city"
-- Midjourney: Generic skyline
-- Runway: Vague visuals
+* Depth (level of insight or elaboration)
 
-Prompt Type 2: "Generate a futuristic city at night with flying cars and neon lights"
-- Midjourney: Stunning, detailed visuals
-- Runway: High-concept sci-fi aesthetic
+## Observations and Analysis:
+1. In the creative storytelling task, the naïve prompt like “Tell me a story” generated a simple and generic narrative. However, the basic prompt “Write a short story about a rabbit who overcomes its fear of the dark” led to a well-structured and meaningful story with a moral.
 
-Observation: Specific descriptors vastly improve visual content.
-# Evaluation Metrics:
+2. When answering a factual question, the prompt “What is gravity?” resulted in a textbook-style response, while “Explain gravity to a 10-year-old using simple examples” produced a clearer and more relatable answer that matched the intended audience.
 
-Responses were rated based on:
-- Relevance
-- Depth
-- Creativity
-- Accuracy
-- Clarity
+3. For summarizing a concept, the naïve prompt “Summarize AI” led to an overly general and unfocused summary. In contrast, “Summarize the impact of AI on healthcare in simple terms” yielded a concise and relevant explanation targeted to a specific domain.
 
-Scores ranged from 1 (low) to 5 (high). Refined prompts consistently scored higher.
-# Key Findings:
+4. In the advice-giving scenario, a naïve request like “Give me life advice” triggered vague, philosophical content. A basic prompt such as “Give three practical tips for a college student managing studies and a part-time job” produced actionable and focused advice.
 
-1. Broad Prompts often lead to surface-level, generic responses.
-2. Refined Prompts improve depth, clarity, and focus.
-3. Creative Prompts unlock the AI's potential for nuanced and original outputs.
-4. Models differ slightly in style:
-   - ChatGPT: Balanced and versatile
-   - Claude: Contextually deep and philosophical
-   - DeepSeek: Structured and informative
-# Best Practices for Prompting:
+5. Lastly, in the technical explanation task, a naïve “Explain Python” prompt gave a list of features. But a basic prompt like “Explain Python to a beginner with no programming experience” delivered a friendly, step-by-step introduction.
 
-Tips:
-- Be clear about your intent
-- Use specifics (what, who, how, when)
-- Combine creative and structured phrasing
-- Use follow-up prompts for deeper insights
+## Findings:
+ * Basic prompts consistently resulted in higher quality, more relevant, and deeper responses.
 
-Example:
-Bad: "Talk about climate."
-Good: "Explain three ways climate change affects coastal cities, with real-world examples."
-# Conclusion:
+ * Naïve prompts only worked well when no clear outcome or structure was required.
 
-This comparative study highlights the critical role that prompt engineering plays in AI interaction. More refined and detailed prompts consistently produce better, richer, and more useful outputs. As generative AI tools become more prevalent, users must learn how to communicate effectively with these systems to harness their full capabilities.
+ * Tasks involving teaching, storytelling, or complex reasoning significantly benefited from refined prompting.
+
+ * This experiment shows that prompt clarity and specificity are crucial for optimizing ChatGPT’s capabilities.
+
+# OUTPUT:
+All prompt-response pairs were tested and documented. The differences between naïve and basic prompting were clearly observed across all tasks.
+
+# RESULT: 
+The prompt for the above said problem executed successfully
