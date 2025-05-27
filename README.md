@@ -1,108 +1,119 @@
-# EX-2-prompt-engineering-Comparative Analysis of different types of Prompting patterns and explain with Various Test scenerios
-
-Experiment:
-Test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios. 
-     Analyze the quality, accuracy, and depth of the generated responses.
-
-# OUTPUT
-
-### Purpose:
-To test and compare how two large language models — ChatGPT and Gemini — respond to different prompting patterns, specifically examining their behavior when given broad (unstructured) versus refined (clear) prompts, across different prompt styles.
-### Prompt Type 1: Intuition Behind Prompts
-### Prompt A (Broad):
-"Tell me something interesting."
-### ChatGPT:
-Two hearts pump blood to the gills, one to the body—and they stop the body-pumping heart when they swim.
-### Gemini:
-Bees make honey, and its low water content and acidity prevent bacteria from thriving, allowing it to last indefinitely if stored properly.
-### Prompt B (Refined):
-"Explain the intuition behind how prompts work in AI language models with two simple examples."
-### ChatGPT:
-Prompts guide the AI on what to say by giving it context.
-### Example 1:
-Prompt: “Translate to French: Good morning”
-→ AI sees “Translate” and gives “Bonjour” — it's following the instruction.
-### Example 2:
-Prompt: “Once upon a time,”
-→ AI continues with a story — it sees this as a storytelling cue.
-Prompts shape the AI’s response style and content.
-### Gemini:
-AI language models predict the next words. Prompts provide context to guide this prediction.
-### Example 1: 
-Prompt: "The sky is..." Intuition: The model predicts words commonly following "The sky is," like "blue" or "cloudy."
-### Example 2: 
-Prompt: "Translate 'hello' to French." Intuition: The model recognizes the translation task and predicts "bonjour."
-
-### Prompt Type 2: Straightforward Prompts
-### Prompt A (Broad):
-"Rain."
-### ChatGPT:
-Rain forms when moist air cools, condenses into droplets, and falls from clouds due to gravity
-### Gemini:
-Water falling from clouds.
-### Prompt B (Refined):
-"Explain what causes rainfall in 1-2 sentences."
-### ChatGPT:
-Rainfall happens when warm, moist air rises, cools, and condenses into water droplets in clouds. When these droplets grow heavy enough, they fall as rain. 
-### Gemini:
- Warm, moist air rises, cools, and condenses into water droplets or ice crystals, forming clouds. When these droplets or crystals become too heavy, they fall to the Earth as rain. 
-
-### Prompt Type 3: Tabular Format Prompting
-### Prompt A (Broad):
-"Tell me different types of energy."
-### ChatGPT:
-Kinetic Energy,Potential Energy,Thermal (Heat) Energy,Chemical Energy,Electrical Energy,Nuclear Energy,Light (Radiant) Energy,Sound Energy
-### Gemini:
-There are many types of energy, broadly categorized as kinetic (energy of motion) and potential (stored energy).   
-### Examples include:
-Kinetic: Motion, thermal (heat), radiant (light), electrical, sound.   
-Potential: Chemical, gravitational, nuclear, elastic, mechanical.   
-Energy sources can also be classified as renewable (naturally replenished, like solar, wind, and hydro) and non-renewable (finite resources, like fossil fuels and nuclear).   
-### Prompt B (Refined):
-"List 3 types of energy in a table with their definition and example."
-### ChatGPT:
-```Type of Energy	Definition	Example
-Kinetic Energy	Energy of motion.	A moving car.
-Potential Energy	Stored energy due to position or condition.	A stretched rubber band.
-Thermal Energy	Energy from the movement of particles in matter.	Boiling water.
-```
-### Gemini:
-```Energy Type	Definition	Example
-Kinetic	Energy of motion	A moving car
-Potential	Stored energy due to position	A ball held at a height
-Thermal	Energy due to temperature	Heat from a stove burner
-```
-### Prompt Type 4: Comparative Analysis Prompt
-### Prompt A (Broad):
-"Compare things."
-### ChatGPT:
-Here are some comparisons:
-### 1.	Apples vs. Oranges
-o	Apples: Crisp, sweet or tart, commonly eaten raw.
-o	Oranges: Juicy, tangy, mostly consumed as juice or fresh.
-### 2.	Cars vs. Bicycles
-o	Cars: Faster, require fuel, can travel long distances.
-o	Bicycles: Slower, eco-friendly, require physical effort.
-
-### Gemini:
- Apples are sweet and crunchy, while oranges are citrusy and juicy. Both are fruits but offer different tastes and textures.
-### Prompt B (Refined):
-" Compare the effectiveness of rule-based systems and machine learning models in solving complex problems”
-
-### ChatGPT:
-Rule-based systems use predefined rules, making them effective for simple tasks but struggle with complexity and adaptability. They require manual updates for maintenance.
-Machine learning models, on the other hand, learn from data, handle complex problems better, and improve over time with more data. They are more adaptable and typically perform better in uncertain scenarios.
-
-### Gemini:
-Rule-based systems excel in well-defined problems with clear, logical rules, offering transparency and consistency. However, they struggle with complex, dynamic situations requiring adaptation and learning. Machine learning models, on the other hand, learn from data to solve intricate problems, improve with more data, and handle ambiguity, but can be less transparent and require significant data for training.
 
 
-# RESULT:
-### Based on the analysis of quality, accuracy, and depth, both AI models perform well, with slight differences:
-### 1.	Quality:
-Chat GPT provides more detailed explanations, while Gemini is generally more concise and focused.
-### 2.	Accuracy:
-Complex scenarios tend to be handled more accurately by ChatGPT, whereas simpler, straightforward tasks are more precisely handled by Gemini
-### 3.	Depth:
-Gemini offers deeper responses in unstructured or broad prompts, while ChatGPT is more efficient in structured, refined prompts.
-Overall, the best model depends on user preference for detail, clarity, and the complexity of the prompt. Gemini is the best choice for users seeking more depth and detailed explanations
+# EX-2 Comparative Analysis of different types of Prompting patterns and explain with Various Test scenerios
+# AIM: 
+
+Test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios. Analyze the quality, accuracy, and depth of the generated responses.
+
+# Aim of the Study:
+
+To test and compare how different models respond to various prompts — from open-ended or vague queries to well-structured and specific instructions — and to analyze how these variations impact: 
+- Response quality
+- Depth of understanding
+- Accuracy and relevance
+# Methodology:
+
+1. Select three categories of prompts:
+   - Broad/unstructured
+   - Basic/clear
+   - Creative/advanced
+
+2. Use three major AI tools for response generation:
+   - ChatGPT (OpenAI)
+   - Claude (Anthropic)
+   - DeepSeek (DeepSeekAI)
+
+3. For each prompt type, responses will be:
+   - Evaluated qualitatively (coherence, depth, relevance)
+   - Rated quantitatively (scale of 1–5)
+
+4. Additionally, prompt inputs are given to:
+   - Runway: to evaluate prompt interpretation for video generation
+   - Midjourney: to visualize response accuracy in image generation
+# Prompt Types Explained:
+1.Broad/Unstructured Prompt:
+A Broad/Unstructured Prompt is a general or vague instruction given to an AI model, such as “Tell me about AI.” It lacks specific details or direction, leading to wide-ranging, often superficial responses. These prompts offer creative freedom but may result in less focused or less relevant outputs.
+ e.g., "Tell me about AI."
+
+2. Basic/Refined Prompt: 
+A Basic/Refined Prompt is a clearly structured and specific instruction given to an AI model. It includes details like context, desired output, and format, guiding the model toward accurate, relevant, and high-quality responses. These prompts reduce ambiguity and enhance the depth and usefulness of the generated content.
+e.g., "Explain how AI is used in the healthcare sector with examples."
+
+3. Creative/Advanced Prompt: 
+A creative/advanced prompt is a highly specific and imaginative instruction designed to unlock an AI's full potential. It encourages originality, emotional depth, and contextual richness. These prompts often involve storytelling, hypothetical scenarios, or complex tasks, resulting in more nuanced, engaging, and insightful responses compared to basic or broad prompts.
+e.g., "Generate a short sci-fi story where AI is used to terraform Mars, with emotional conflict."
+Scenario 1 – General Information Retrieval
+Prompt Type 1: "Talk about space"
+- ChatGPT: Gives a broad overview
+- Claude: Focuses on key areas
+- DeepSeek: Detailed facts and organized output
+
+Prompt Type 2: "List five recent space missions by NASA and their purpose"
+- ChatGPT: Highly accurate
+- Claude: Deeper technical insight
+- DeepSeek: Systematic list
+
+Observation: Refined prompts yield more relevant and focused responses.
+Scenario 2 – Creative Content Generation
+Prompt Type 1: "Write a story about robots"
+- ChatGPT: Engaging, generic plot
+- Claude: Philosophical themes
+- DeepSeek: Balanced creativity and logic
+
+Prompt Type 2: "Write a short story where a robot discovers human art in a post-apocalyptic world"
+- All models delivered richer, more compelling narratives with strong emotional arcs
+
+Observation: Advanced prompts unleash more creativity and coherence.
+Scenario 3 – Instructional/Procedural Response
+Prompt Type 1: "How to bake a cake?"
+- All models: Provided basic steps
+
+Prompt Type 2: "Provide a step-by-step chocolate cake recipe with measurements and baking time"
+- Responses: Detailed, instructional, and more actionable
+
+Observation: Clarity in prompt enhances instructional usefulness.
+Scenario 4 – Visual Media Creation
+Tool Used: Midjourney (Image) and Runway (Video)
+
+Prompt Type 1: "Create an image of a city"
+- Midjourney: Generic skyline
+- Runway: Vague visuals
+
+Prompt Type 2: "Generate a futuristic city at night with flying cars and neon lights"
+- Midjourney: Stunning, detailed visuals
+- Runway: High-concept sci-fi aesthetic
+
+Observation: Specific descriptors vastly improve visual content.
+# Evaluation Metrics:
+
+Responses were rated based on:
+- Relevance
+- Depth
+- Creativity
+- Accuracy
+- Clarity
+
+Scores ranged from 1 (low) to 5 (high). Refined prompts consistently scored higher.
+# Key Findings:
+
+1. Broad Prompts often lead to surface-level, generic responses.
+2. Refined Prompts improve depth, clarity, and focus.
+3. Creative Prompts unlock the AI's potential for nuanced and original outputs.
+4. Models differ slightly in style:
+   - ChatGPT: Balanced and versatile
+   - Claude: Contextually deep and philosophical
+   - DeepSeek: Structured and informative
+# Best Practices for Prompting:
+
+Tips:
+- Be clear about your intent
+- Use specifics (what, who, how, when)
+- Combine creative and structured phrasing
+- Use follow-up prompts for deeper insights
+
+Example:
+Bad: "Talk about climate."
+Good: "Explain three ways climate change affects coastal cities, with real-world examples."
+# Conclusion:
+
+This comparative study highlights the critical role that prompt engineering plays in AI interaction. More refined and detailed prompts consistently produce better, richer, and more useful outputs. As generative AI tools become more prevalent, users must learn how to communicate effectively with these systems to harness their full capabilities.
